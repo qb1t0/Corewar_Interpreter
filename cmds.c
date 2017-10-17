@@ -12,7 +12,12 @@ int cw_check_value(t_cmnd *cmnd, int j, char *label)                         //i
     if (IS_LBL(label[i]))
         return (0);
     label[i] == '-' ? i++ : 0;
-    if (!(ft_isaldigit(label + i)))                                          //NaN(not a number), error == 1
+    if (j + 1 == g_tab[cmnd->cmd].arg)
+    {
+        if (!cw_write_cmd(cmnd, j))
+            return (cw_e(27));                                               //shit after line error
+    }
+    else if (!(ft_isaldigit(label + i)))                                          //NaN(not a number), error == 1
         return (cw_e(21));
     cmnd->i_arg[j] = (UI)ft_atoi(label);                                         //getting value
     if ((g_tab[cmnd->cmd].kind[j] & T_DIR) && !g_tab[cmnd->cmd].id2)
@@ -22,14 +27,33 @@ int cw_check_value(t_cmnd *cmnd, int j, char *label)                         //i
         cmnd->i_arg[j] = SWAP_UI(cmnd->i_arg[j]);
     }
     else
-        //cmnd->i_arg[j] = (unsigned short)SWAP_USI(cmnd->i_arg[j]);
         cmnd->i_arg[j] = SWAP_USI(cmnd->i_arg[j]);
     return (0);
 }
 
 // calculating byte size of command
-int cw_write_cmd(t_cmnd *cmnd)
+int cw_write_cmd(t_cmnd *cmnd, int type)
 {
+    char *s;
+    int i;
+
+    if (type >= 0)
+    {
+        i = 0;
+        s = cmnd->args[type];
+        s[i] == '%' ? i++ : 0;
+        s[i] == '-' ? i++ : 0;
+        while (ft_isdigit(s[i]))
+            i++;
+        if (s[i])
+        {
+            while (SPACE(s[i]))
+                i++;
+            if (s[i] && !IS_COM(s[i]))
+                return (0);
+        }
+        return (1);
+    }
     cmnd->size++;                                                           //for command id(t_cmnd->cmd)
     g_tab[cmnd->cmd].id1 ? cmnd->size++ : 0;                                //if id1 == 1 than add 1 cipher size(1 byte)
     return (1);
@@ -121,7 +145,7 @@ int cw_cmd(int i, int j, int cmd, int k) //types: command(0) || label(1); i,j - 
     g_file->cmnd ? g_file->cmnd->prev = c : NULL;                            //creating prev list
     g_file->cmnd = c;                                                        //redefine global head to the start of the list
     if (cw_args_parse(0, g_file->cmnd->args[0], g_file->cmnd) > 0)           //call parsing arguments function
-        cw_write_cmd(g_file->cmnd);
+        cw_write_cmd(g_file->cmnd, -1);
     else
         return (-1);                                                         //parsing args error
     return (g_bytes += g_file->cmnd->size);                                  //add command size 2 the total

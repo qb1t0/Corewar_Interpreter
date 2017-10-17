@@ -6,31 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/Users/admin/CLionProjects/corewar_test/asm.h
+/nfs/2016/y/ysalata/CLionProjects/corewar_test/asm.h
 libft/libft.h
-/Users/admin/CLionProjects/corewar_test/libft/libft.h
+/nfs/2016/y/ysalata/CLionProjects/corewar_test/libft/libft.h
 libft/ft_printf/ft_printf.h
-/Users/admin/CLionProjects/corewar_test/libft/ft_printf/ft_printf.h
+/nfs/2016/y/ysalata/CLionProjects/corewar_test/libft/ft_printf/ft_printf.h
 stdlib.h
 -
 fcntl.h
 -
 op.h
-/Users/admin/CLionProjects/corewar_test/op.h
+/nfs/2016/y/ysalata/CLionProjects/corewar_test/op.h
 
-/Users/admin/CLionProjects/corewar_test/cmds.c
+/nfs/2016/y/ysalata/CLionProjects/corewar_test/cmds.c
 asm.h
-/Users/admin/CLionProjects/corewar_test/asm.h
+/nfs/2016/y/ysalata/CLionProjects/corewar_test/asm.h
 
-/Users/admin/CLionProjects/corewar_test/head.c
+/nfs/2016/y/ysalata/CLionProjects/corewar_test/head.c
 asm.h
-/Users/admin/CLionProjects/corewar_test/asm.h
+/nfs/2016/y/ysalata/CLionProjects/corewar_test/asm.h
 
-/Users/admin/CLionProjects/corewar_test/label.c
+/nfs/2016/y/ysalata/CLionProjects/corewar_test/label.c
 asm.h
-/Users/admin/CLionProjects/corewar_test/asm.h
+/nfs/2016/y/ysalata/CLionProjects/corewar_test/asm.h
 
-/Users/admin/CLionProjects/corewar_test/libft/ft_printf/ft_printf.h
+/nfs/2016/y/ysalata/CLionProjects/corewar_test/libft/ft_printf/ft_printf.h
 stdio.h
 -
 stdarg.h
@@ -40,9 +40,9 @@ unistd.h
 stdlib.h
 -
 ../libft.h
-/Users/admin/CLionProjects/corewar_test/libft/libft.h
+/nfs/2016/y/ysalata/CLionProjects/corewar_test/libft/libft.h
 
-/Users/admin/CLionProjects/corewar_test/libft/libft.h
+/nfs/2016/y/ysalata/CLionProjects/corewar_test/libft/libft.h
 string.h
 -
 unistd.h
@@ -50,13 +50,13 @@ unistd.h
 stdlib.h
 -
 
-/Users/admin/CLionProjects/corewar_test/main.c
+/nfs/2016/y/ysalata/CLionProjects/corewar_test/main.c
 asm.h
-/Users/admin/CLionProjects/corewar_test/asm.h
+/nfs/2016/y/ysalata/CLionProjects/corewar_test/asm.h
 
-/Users/admin/CLionProjects/corewar_test/op.h
+/nfs/2016/y/ysalata/CLionProjects/corewar_test/op.h
 
-/Users/admin/CLionProjects/corewar_test/output.c
+/nfs/2016/y/ysalata/CLionProjects/corewar_test/output.c
 asm.h
-/Users/admin/CLionProjects/corewar_test/asm.h
+/nfs/2016/y/ysalata/CLionProjects/corewar_test/asm.h
 

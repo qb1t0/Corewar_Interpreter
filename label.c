@@ -6,7 +6,7 @@ int cw_calllabel(char *s, t_cmnd *c, int i, int type) //1-T_DIR, 0-T_IND        
     t_label *tmp;
 
     tmp = g_file->labl;
-    while(tmp)
+    while(tmp)                                                              //toDO: write catting last argument function here
     {
         if (!ft_strcmp(tmp->name, s))
         {
@@ -76,8 +76,9 @@ int cw_label(int start, int len)
     l->next = g_file->labl;                                                 //adding from start new label 2 our label list
     g_file->labl ? g_file->labl->prev = l : NULL;                           //creating prev list
     g_file->labl = l;                                                       //redefine global head to the start of the list
-    while (SPACE(g_s[++g_i]))                                               //skips spaces after label
-        ;
+    g_i++;
+    while (SPACE(g_s[g_i]))                                               //skips spaces after label
+        g_i++;
     return ((!g_s[g_i] || (IS_COM(g_s[g_i]))) ? 1 : cw_cmd(0, -1, -1, 0));  //if empty || comment after - skip
     //else call cw_cmd function
 }

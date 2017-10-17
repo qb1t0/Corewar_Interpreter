@@ -6,6 +6,7 @@
 # include <stdlib.h>
 # include <fcntl.h>
 # include "op.h"
+
 # define UI unsigned int
 # define SPACE(c) ((c) == '\t' || (c) == ' ' || (c) == '\v') ? 1 : 0
 # define NAME NAME_CMD_STRING
@@ -13,11 +14,11 @@
 # define LABEL LABEL_CHAR
 # define IS_DIR(a) ((a) == DIRECT_CHAR ) ? 1 : 0 // '%'
 # define IS_LBL(b) ((b) == LABEL_CHAR ? 1 : 0) // ':'
-# define IS_COM(u) ((u) == COMMENT_CHAR || (u) == ';' ? 1 : 0)
+# define IS_COM(u) (((u) == COMMENT_CHAR || (u) == ';') ? 1 : 0)
 # define SWAP_USI(i) (((i) << 8) | ((i) >> 8 & 0xFF))
 # define SWAP_UI(i) (((i) << 16) | ((i) >> 16))
 
-char *g_er[] = {
+static char *g_er[] = {
     ": Can't open() file.\n",
     ": Can't read() file.\n",
     ": Empty file\n",
@@ -44,7 +45,8 @@ char *g_er[] = {
     ": Undefined symbols after .name string.\n",
     ": Undefined symbols after .comment string.\n",
     ": Bot instructions didn't found.\n",
-    ": Can't create a .cor file\n"
+    ": Can't create a .cor file\n",
+    ": Undefined symbols after instruction string.\n",
 };
 
 typedef struct      s_cmnd
@@ -93,7 +95,7 @@ typedef struct      s_op
     int             id2;
 }                   t_op;
 
-t_op    g_tab[17] =
+static t_op    g_tab[17] =
         {
                 {"live", 1, {T_DIR}, 1, 10, "alive", 0, 0},
                 {"ld", 2, {T_DIR | T_IND, T_REG}, 2, 5, "load", 1, 0},
@@ -130,7 +132,7 @@ t_header *g_head;
 int                 cw_e(int type);
 unsigned int		cw_endian(unsigned int i);
 int                 cw_check_value(t_cmnd *cmnd, int j, char *label);
-int                 cw_write_cmd(t_cmnd *cmnd);
+int                 cw_write_cmd(t_cmnd *cmnd, int type);
 int                 cw_args_parse(int i, char *arg, t_cmnd *cmnd);
 t_cmnd              *cw_cmnd_init();
 int                 cw_cmd(int i, int j, int cmd, int k);

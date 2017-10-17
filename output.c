@@ -42,7 +42,7 @@ int cw_write_all(char *name, t_cmnd *tmp)
         return (cw_e(25));
     new = ft_strsub(name, 0, ft_strlen(name) - 2);
     new = ft_strjoin(new, ".cor");
-    if ((fd = open(new, O_RDWR | O_CREAT, 00666)) < 0)
+    if ((fd = open(new, O_RDWR | O_CREAT, 00700)) < 0)
         return (cw_e(26));                                                   //cant create .cor file error
     write(fd, g_head, sizeof(t_header));
     while (tmp->next)

@@ -6,7 +6,7 @@
 /*   By: ysalata <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 16:36:12 by ysalata           #+#    #+#             */
-/*   Updated: 2016/12/05 15:46:17 by ysalata          ###   ########.fr       */
+/*   Updated: 2017/10/17 19:00:42 by ysalata          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ char			*ft_strjoin(char const *s1, char const *s2)
 	if (!(res = ft_strnew(ft_strlen(s1) + ft_strlen(s2))))
 		return (NULL);
 	res = ft_strcat(ft_strcpy(res, s1), s2);
-	return (ft_strclr(s1) ? res : 0);
+	return (res);
 }
