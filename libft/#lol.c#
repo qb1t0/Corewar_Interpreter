@@ -1,0 +1,8 @@
+
+#include "libft.h"
+#include <stdio.h>
+
+int main(void)
+{
+	return (printf("RESULT SUKA%d\n", ft_isaldigit("12345676543d")));
+}
