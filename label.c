@@ -65,7 +65,7 @@ int cw_label(int start, int len)
     while (g_s[g_i] != LABEL_CHAR)
         g_i++;
     if (g_i == start || (g_i != 0 && g_s[g_i - 1] == DIRECT_CHAR))          //if %: => its command argument, call cw_cmd function
-        return (g_i == start ? cw_e(14) : cw_cmd(0, -1, -1, 1));               //if g_i == start => means label is empty, invalid label name error
+        return (g_i == start ? cw_e(14) : cw_cmd(0, -1, -1, 1));            //if g_i == start => means label is empty, invalid label name error
     while (len < g_i)                                                       //reading label name
         if (!ft_strchr(LABEL_CHARS, g_s[len++]))
             return (cw_e(15));                                              //invalid label name(!= LABELS CHARS)

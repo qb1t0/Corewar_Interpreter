@@ -124,6 +124,9 @@ int cw_cmd(int i, int j, int cmd, int k) //types: command(0) || label(1); i,j - 
     t_cmnd      *c;
 
     k ? g_i = 0 : 0;
+    if (g_i == 0)
+        while (SPACE(g_s[g_i]))
+         g_i++;
     while (!SPACE(g_s[g_i + i]))                                            //while operation name(!space)
         i++;
     c = cw_cmnd_init();                                                     //new command initialization
