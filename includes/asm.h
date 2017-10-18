@@ -1,8 +1,8 @@
 #ifndef UNTITLED1_ASM_H
 # define UNTITLED1_ASM_H
 
-# include "libft/libft.h"
-# include "libft/ft_printf/ft_printf.h"
+# include "../libft/libft.h"
+# include "../libft/ft_printf/ft_printf.h"
 # include <stdlib.h>
 # include <fcntl.h>
 # include "op.h"

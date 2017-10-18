@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/admin/CLionProjects/corewar_test/cmds.c" "/Users/admin/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles/untitled1.dir/cmds.c.o"
-  "/Users/admin/CLionProjects/corewar_test/head.c" "/Users/admin/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles/untitled1.dir/head.c.o"
-  "/Users/admin/CLionProjects/corewar_test/label.c" "/Users/admin/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles/untitled1.dir/label.c.o"
-  "/Users/admin/CLionProjects/corewar_test/main.c" "/Users/admin/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles/untitled1.dir/main.c.o"
-  "/Users/admin/CLionProjects/corewar_test/output.c" "/Users/admin/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles/untitled1.dir/output.c.o"
+  "/nfs/2016/y/ysalata/CLionProjects/corewar_test/src/cmds.c" "/nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles/untitled1.dir/src/cmds.c.o"
+  "/nfs/2016/y/ysalata/CLionProjects/corewar_test/src/head.c" "/nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles/untitled1.dir/src/head.c.o"
+  "/nfs/2016/y/ysalata/CLionProjects/corewar_test/src/label.c" "/nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles/untitled1.dir/src/label.c.o"
+  "/nfs/2016/y/ysalata/CLionProjects/corewar_test/src/main.c" "/nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles/untitled1.dir/src/main.c.o"
+  "/nfs/2016/y/ysalata/CLionProjects/corewar_test/src/output.c" "/nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles/untitled1.dir/src/output.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

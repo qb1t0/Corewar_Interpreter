@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/admin/CLionProjects/corewar_test
+CMAKE_SOURCE_DIR = /nfs/2016/y/ysalata/CLionProjects/corewar_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/admin/CLionProjects/corewar_test/cmake-build-debug
+CMAKE_BINARY_DIR = /nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/untitled1.dir/depend.make
@@ -57,146 +57,146 @@ include CMakeFiles/untitled1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/untitled1.dir/flags.make
 
-CMakeFiles/untitled1.dir/main.c.o: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/admin/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/untitled1.dir/main.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/main.c.o   -c /Users/admin/CLionProjects/corewar_test/main.c
+CMakeFiles/untitled1.dir/src/main.c.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/src/main.c.o: ../src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/untitled1.dir/src/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/src/main.c.o   -c /nfs/2016/y/ysalata/CLionProjects/corewar_test/src/main.c
 
-CMakeFiles/untitled1.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/main.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/admin/CLionProjects/corewar_test/main.c > CMakeFiles/untitled1.dir/main.c.i
+CMakeFiles/untitled1.dir/src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/src/main.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/y/ysalata/CLionProjects/corewar_test/src/main.c > CMakeFiles/untitled1.dir/src/main.c.i
 
-CMakeFiles/untitled1.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/main.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/admin/CLionProjects/corewar_test/main.c -o CMakeFiles/untitled1.dir/main.c.s
+CMakeFiles/untitled1.dir/src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/src/main.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/y/ysalata/CLionProjects/corewar_test/src/main.c -o CMakeFiles/untitled1.dir/src/main.c.s
 
-CMakeFiles/untitled1.dir/main.c.o.requires:
+CMakeFiles/untitled1.dir/src/main.c.o.requires:
 
-.PHONY : CMakeFiles/untitled1.dir/main.c.o.requires
+.PHONY : CMakeFiles/untitled1.dir/src/main.c.o.requires
 
-CMakeFiles/untitled1.dir/main.c.o.provides: CMakeFiles/untitled1.dir/main.c.o.requires
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/main.c.o.provides.build
-.PHONY : CMakeFiles/untitled1.dir/main.c.o.provides
+CMakeFiles/untitled1.dir/src/main.c.o.provides: CMakeFiles/untitled1.dir/src/main.c.o.requires
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/main.c.o.provides.build
+.PHONY : CMakeFiles/untitled1.dir/src/main.c.o.provides
 
-CMakeFiles/untitled1.dir/main.c.o.provides.build: CMakeFiles/untitled1.dir/main.c.o
-
-
-CMakeFiles/untitled1.dir/head.c.o: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/head.c.o: ../head.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/admin/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/untitled1.dir/head.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/head.c.o   -c /Users/admin/CLionProjects/corewar_test/head.c
-
-CMakeFiles/untitled1.dir/head.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/head.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/admin/CLionProjects/corewar_test/head.c > CMakeFiles/untitled1.dir/head.c.i
-
-CMakeFiles/untitled1.dir/head.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/head.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/admin/CLionProjects/corewar_test/head.c -o CMakeFiles/untitled1.dir/head.c.s
-
-CMakeFiles/untitled1.dir/head.c.o.requires:
-
-.PHONY : CMakeFiles/untitled1.dir/head.c.o.requires
-
-CMakeFiles/untitled1.dir/head.c.o.provides: CMakeFiles/untitled1.dir/head.c.o.requires
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/head.c.o.provides.build
-.PHONY : CMakeFiles/untitled1.dir/head.c.o.provides
-
-CMakeFiles/untitled1.dir/head.c.o.provides.build: CMakeFiles/untitled1.dir/head.c.o
+CMakeFiles/untitled1.dir/src/main.c.o.provides.build: CMakeFiles/untitled1.dir/src/main.c.o
 
 
-CMakeFiles/untitled1.dir/label.c.o: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/label.c.o: ../label.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/admin/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/untitled1.dir/label.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/label.c.o   -c /Users/admin/CLionProjects/corewar_test/label.c
+CMakeFiles/untitled1.dir/src/head.c.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/src/head.c.o: ../src/head.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/untitled1.dir/src/head.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/src/head.c.o   -c /nfs/2016/y/ysalata/CLionProjects/corewar_test/src/head.c
 
-CMakeFiles/untitled1.dir/label.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/label.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/admin/CLionProjects/corewar_test/label.c > CMakeFiles/untitled1.dir/label.c.i
+CMakeFiles/untitled1.dir/src/head.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/src/head.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/y/ysalata/CLionProjects/corewar_test/src/head.c > CMakeFiles/untitled1.dir/src/head.c.i
 
-CMakeFiles/untitled1.dir/label.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/label.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/admin/CLionProjects/corewar_test/label.c -o CMakeFiles/untitled1.dir/label.c.s
+CMakeFiles/untitled1.dir/src/head.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/src/head.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/y/ysalata/CLionProjects/corewar_test/src/head.c -o CMakeFiles/untitled1.dir/src/head.c.s
 
-CMakeFiles/untitled1.dir/label.c.o.requires:
+CMakeFiles/untitled1.dir/src/head.c.o.requires:
 
-.PHONY : CMakeFiles/untitled1.dir/label.c.o.requires
+.PHONY : CMakeFiles/untitled1.dir/src/head.c.o.requires
 
-CMakeFiles/untitled1.dir/label.c.o.provides: CMakeFiles/untitled1.dir/label.c.o.requires
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/label.c.o.provides.build
-.PHONY : CMakeFiles/untitled1.dir/label.c.o.provides
+CMakeFiles/untitled1.dir/src/head.c.o.provides: CMakeFiles/untitled1.dir/src/head.c.o.requires
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/head.c.o.provides.build
+.PHONY : CMakeFiles/untitled1.dir/src/head.c.o.provides
 
-CMakeFiles/untitled1.dir/label.c.o.provides.build: CMakeFiles/untitled1.dir/label.c.o
-
-
-CMakeFiles/untitled1.dir/cmds.c.o: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/cmds.c.o: ../cmds.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/admin/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/untitled1.dir/cmds.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/cmds.c.o   -c /Users/admin/CLionProjects/corewar_test/cmds.c
-
-CMakeFiles/untitled1.dir/cmds.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/cmds.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/admin/CLionProjects/corewar_test/cmds.c > CMakeFiles/untitled1.dir/cmds.c.i
-
-CMakeFiles/untitled1.dir/cmds.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/cmds.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/admin/CLionProjects/corewar_test/cmds.c -o CMakeFiles/untitled1.dir/cmds.c.s
-
-CMakeFiles/untitled1.dir/cmds.c.o.requires:
-
-.PHONY : CMakeFiles/untitled1.dir/cmds.c.o.requires
-
-CMakeFiles/untitled1.dir/cmds.c.o.provides: CMakeFiles/untitled1.dir/cmds.c.o.requires
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/cmds.c.o.provides.build
-.PHONY : CMakeFiles/untitled1.dir/cmds.c.o.provides
-
-CMakeFiles/untitled1.dir/cmds.c.o.provides.build: CMakeFiles/untitled1.dir/cmds.c.o
+CMakeFiles/untitled1.dir/src/head.c.o.provides.build: CMakeFiles/untitled1.dir/src/head.c.o
 
 
-CMakeFiles/untitled1.dir/output.c.o: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/output.c.o: ../output.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/admin/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/untitled1.dir/output.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/output.c.o   -c /Users/admin/CLionProjects/corewar_test/output.c
+CMakeFiles/untitled1.dir/src/label.c.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/src/label.c.o: ../src/label.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/untitled1.dir/src/label.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/src/label.c.o   -c /nfs/2016/y/ysalata/CLionProjects/corewar_test/src/label.c
 
-CMakeFiles/untitled1.dir/output.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/output.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/admin/CLionProjects/corewar_test/output.c > CMakeFiles/untitled1.dir/output.c.i
+CMakeFiles/untitled1.dir/src/label.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/src/label.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/y/ysalata/CLionProjects/corewar_test/src/label.c > CMakeFiles/untitled1.dir/src/label.c.i
 
-CMakeFiles/untitled1.dir/output.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/output.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/admin/CLionProjects/corewar_test/output.c -o CMakeFiles/untitled1.dir/output.c.s
+CMakeFiles/untitled1.dir/src/label.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/src/label.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/y/ysalata/CLionProjects/corewar_test/src/label.c -o CMakeFiles/untitled1.dir/src/label.c.s
 
-CMakeFiles/untitled1.dir/output.c.o.requires:
+CMakeFiles/untitled1.dir/src/label.c.o.requires:
 
-.PHONY : CMakeFiles/untitled1.dir/output.c.o.requires
+.PHONY : CMakeFiles/untitled1.dir/src/label.c.o.requires
 
-CMakeFiles/untitled1.dir/output.c.o.provides: CMakeFiles/untitled1.dir/output.c.o.requires
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/output.c.o.provides.build
-.PHONY : CMakeFiles/untitled1.dir/output.c.o.provides
+CMakeFiles/untitled1.dir/src/label.c.o.provides: CMakeFiles/untitled1.dir/src/label.c.o.requires
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/label.c.o.provides.build
+.PHONY : CMakeFiles/untitled1.dir/src/label.c.o.provides
 
-CMakeFiles/untitled1.dir/output.c.o.provides.build: CMakeFiles/untitled1.dir/output.c.o
+CMakeFiles/untitled1.dir/src/label.c.o.provides.build: CMakeFiles/untitled1.dir/src/label.c.o
+
+
+CMakeFiles/untitled1.dir/src/cmds.c.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/src/cmds.c.o: ../src/cmds.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/untitled1.dir/src/cmds.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/src/cmds.c.o   -c /nfs/2016/y/ysalata/CLionProjects/corewar_test/src/cmds.c
+
+CMakeFiles/untitled1.dir/src/cmds.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/src/cmds.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/y/ysalata/CLionProjects/corewar_test/src/cmds.c > CMakeFiles/untitled1.dir/src/cmds.c.i
+
+CMakeFiles/untitled1.dir/src/cmds.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/src/cmds.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/y/ysalata/CLionProjects/corewar_test/src/cmds.c -o CMakeFiles/untitled1.dir/src/cmds.c.s
+
+CMakeFiles/untitled1.dir/src/cmds.c.o.requires:
+
+.PHONY : CMakeFiles/untitled1.dir/src/cmds.c.o.requires
+
+CMakeFiles/untitled1.dir/src/cmds.c.o.provides: CMakeFiles/untitled1.dir/src/cmds.c.o.requires
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/cmds.c.o.provides.build
+.PHONY : CMakeFiles/untitled1.dir/src/cmds.c.o.provides
+
+CMakeFiles/untitled1.dir/src/cmds.c.o.provides.build: CMakeFiles/untitled1.dir/src/cmds.c.o
+
+
+CMakeFiles/untitled1.dir/src/output.c.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/src/output.c.o: ../src/output.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/untitled1.dir/src/output.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/src/output.c.o   -c /nfs/2016/y/ysalata/CLionProjects/corewar_test/src/output.c
+
+CMakeFiles/untitled1.dir/src/output.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/src/output.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/y/ysalata/CLionProjects/corewar_test/src/output.c > CMakeFiles/untitled1.dir/src/output.c.i
+
+CMakeFiles/untitled1.dir/src/output.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/src/output.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/y/ysalata/CLionProjects/corewar_test/src/output.c -o CMakeFiles/untitled1.dir/src/output.c.s
+
+CMakeFiles/untitled1.dir/src/output.c.o.requires:
+
+.PHONY : CMakeFiles/untitled1.dir/src/output.c.o.requires
+
+CMakeFiles/untitled1.dir/src/output.c.o.provides: CMakeFiles/untitled1.dir/src/output.c.o.requires
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/output.c.o.provides.build
+.PHONY : CMakeFiles/untitled1.dir/src/output.c.o.provides
+
+CMakeFiles/untitled1.dir/src/output.c.o.provides.build: CMakeFiles/untitled1.dir/src/output.c.o
 
 
 # Object files for target untitled1
 untitled1_OBJECTS = \
-"CMakeFiles/untitled1.dir/main.c.o" \
-"CMakeFiles/untitled1.dir/head.c.o" \
-"CMakeFiles/untitled1.dir/label.c.o" \
-"CMakeFiles/untitled1.dir/cmds.c.o" \
-"CMakeFiles/untitled1.dir/output.c.o"
+"CMakeFiles/untitled1.dir/src/main.c.o" \
+"CMakeFiles/untitled1.dir/src/head.c.o" \
+"CMakeFiles/untitled1.dir/src/label.c.o" \
+"CMakeFiles/untitled1.dir/src/cmds.c.o" \
+"CMakeFiles/untitled1.dir/src/output.c.o"
 
 # External object files for target untitled1
 untitled1_EXTERNAL_OBJECTS =
 
-untitled1: CMakeFiles/untitled1.dir/main.c.o
-untitled1: CMakeFiles/untitled1.dir/head.c.o
-untitled1: CMakeFiles/untitled1.dir/label.c.o
-untitled1: CMakeFiles/untitled1.dir/cmds.c.o
-untitled1: CMakeFiles/untitled1.dir/output.c.o
+untitled1: CMakeFiles/untitled1.dir/src/main.c.o
+untitled1: CMakeFiles/untitled1.dir/src/head.c.o
+untitled1: CMakeFiles/untitled1.dir/src/label.c.o
+untitled1: CMakeFiles/untitled1.dir/src/cmds.c.o
+untitled1: CMakeFiles/untitled1.dir/src/output.c.o
 untitled1: CMakeFiles/untitled1.dir/build.make
 untitled1: ../libft/libft.a
 untitled1: CMakeFiles/untitled1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/admin/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable untitled1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable untitled1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/untitled1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -204,11 +204,11 @@ CMakeFiles/untitled1.dir/build: untitled1
 
 .PHONY : CMakeFiles/untitled1.dir/build
 
-CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/main.c.o.requires
-CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/head.c.o.requires
-CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/label.c.o.requires
-CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/cmds.c.o.requires
-CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/output.c.o.requires
+CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/src/main.c.o.requires
+CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/src/head.c.o.requires
+CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/src/label.c.o.requires
+CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/src/cmds.c.o.requires
+CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/src/output.c.o.requires
 
 .PHONY : CMakeFiles/untitled1.dir/requires
 
@@ -217,6 +217,6 @@ CMakeFiles/untitled1.dir/clean:
 .PHONY : CMakeFiles/untitled1.dir/clean
 
 CMakeFiles/untitled1.dir/depend:
-	cd /Users/admin/CLionProjects/corewar_test/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/admin/CLionProjects/corewar_test /Users/admin/CLionProjects/corewar_test /Users/admin/CLionProjects/corewar_test/cmake-build-debug /Users/admin/CLionProjects/corewar_test/cmake-build-debug /Users/admin/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles/untitled1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /nfs/2016/y/ysalata/CLionProjects/corewar_test /nfs/2016/y/ysalata/CLionProjects/corewar_test /nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug /nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug /nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles/untitled1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/untitled1.dir/depend
 

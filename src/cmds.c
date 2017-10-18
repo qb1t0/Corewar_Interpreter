@@ -1,4 +1,4 @@
-#include "asm.h"
+#include "../includes/asm.h"
 
 //j for number of reading argument
 int cw_check_value(t_cmnd *cmnd, int j, char *label)                         //if (islabel) ? checking if those label is already exist
@@ -9,17 +9,18 @@ int cw_check_value(t_cmnd *cmnd, int j, char *label)                         //i
     cmnd->size += \
         ((g_tab[cmnd->cmd].kind[j] & T_DIR) && !g_tab[cmnd->cmd].id2) ? 4 : 2;// adding +4 if (!idk1 && T_DIR), else +4
     i = 0;
-    if (IS_LBL(label[i]))
-        return (0);
-    label[i] == '-' ? i++ : 0;
     if (j + 1 == g_tab[cmnd->cmd].arg)
     {
         if (!cw_write_cmd(cmnd, j))
-            return (cw_e(27));                                               //shit after line error
+            return (cw_e(27));                                                    //shit after line error
     }
-    else if (!(ft_isaldigit(label + i)))                                          //NaN(not a number), error == 1
+    if (IS_LBL(label[i]))
+        return (0);
+    cmnd->args[j][i] == '%' ? i++ : 0;
+    cmnd->args[j][i] == '-' ? i++ : 0;
+    if (!(ft_isaldigit(cmnd->args[j] + i)))                                          //NaN(not a number), error == 1
         return (cw_e(21));
-    cmnd->i_arg[j] = (UI)ft_atoi(label);                                         //getting value
+    cmnd->i_arg[j] = (UI)ft_atoi(label);                                          //getting value
     if ((g_tab[cmnd->cmd].kind[j] & T_DIR) && !g_tab[cmnd->cmd].id2)
     {
         cmnd->i_arg[j] = ((cmnd->i_arg[j] << 8) & 0xFF00FF00) |\
@@ -36,22 +37,26 @@ int cw_write_cmd(t_cmnd *cmnd, int type)
 {
     char *s;
     int i;
+    int j;
 
     if (type >= 0)
     {
         i = 0;
         s = cmnd->args[type];
-        s[i] == '%' ? i++ : 0;
+        if (s[i] == '%' ? ++i : 0)
+            s[i] == ':' ? i++ : 0;
         s[i] == '-' ? i++ : 0;
-        while (ft_isdigit(s[i]))
+        while (s[i] && !SPACE(s[i]))
             i++;
+        j = i;
         if (s[i])
         {
-            while (SPACE(s[i]))
+            while (s[i] && SPACE(s[i]))
                 i++;
             if (s[i] && !IS_COM(s[i]))
                 return (0);
         }
+        cmnd->args[type] = ft_strsub(s, 0, (size_t)j);
         return (1);
     }
     cmnd->size++;                                                           //for command id(t_cmnd->cmd)
@@ -96,7 +101,7 @@ int cw_args_parse(int i, char *arg, t_cmnd *cmnd)                            //T
         return (i != g_tab[cmnd->cmd].arg ? \
             cw_args_parse(i, g_file->cmnd->args[i], g_file->cmnd) : 1);      //recursive call till exist args(i) of command
     else
-        return(-13);                                                         //non-existing/invalid argument type error
+        return (-13);                                                         //non-existing/invalid argument type error
 }
 
 /*
@@ -137,7 +142,7 @@ int cw_cmd(int i, int j, int cmd, int k) //types: command(0) || label(1); i,j - 
             c->cmd = cmd;
             break ;
         }
-    if (cmd == 17)                                                           //if command wasn't founded
+    if (cmd == 16)                                                           //if command wasn't founded
         return (cw_e(16));                                                   //non-existing command error
     c->args = ft_strsplit(g_s + g_i + i, SEPARATOR_CHAR);                    //split args by comma(",")
     while (c->args[++j])                                                     //re-write && delete spaces before && after each argument

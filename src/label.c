@@ -1,4 +1,4 @@
-#include "asm.h"
+#include "../includes/asm.h"
 
 //ToDO: NOT FUCKING WORKING
 int cw_calllabel(char *s, t_cmnd *c, int i, int type) //1-T_DIR, 0-T_IND                                          //trying 2 search calling label, returning adress

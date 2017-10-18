@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/admin/CLionProjects/corewar_test
+CMAKE_SOURCE_DIR = /nfs/2016/y/ysalata/CLionProjects/corewar_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/admin/CLionProjects/corewar_test/cmake-build-debug
+CMAKE_BINARY_DIR = /nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/admin/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles /Users/admin/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles /nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/admin/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/2016/y/ysalata/CLionProjects/corewar_test/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,140 +123,140 @@ untitled1/fast:
 	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-cmds.o: cmds.c.o
+src/cmds.o: src/cmds.c.o
 
-.PHONY : cmds.o
-
-# target to build an object file
-cmds.c.o:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/cmds.c.o
-.PHONY : cmds.c.o
-
-cmds.i: cmds.c.i
-
-.PHONY : cmds.i
-
-# target to preprocess a source file
-cmds.c.i:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/cmds.c.i
-.PHONY : cmds.c.i
-
-cmds.s: cmds.c.s
-
-.PHONY : cmds.s
-
-# target to generate assembly for a file
-cmds.c.s:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/cmds.c.s
-.PHONY : cmds.c.s
-
-head.o: head.c.o
-
-.PHONY : head.o
+.PHONY : src/cmds.o
 
 # target to build an object file
-head.c.o:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/head.c.o
-.PHONY : head.c.o
+src/cmds.c.o:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/cmds.c.o
+.PHONY : src/cmds.c.o
 
-head.i: head.c.i
+src/cmds.i: src/cmds.c.i
 
-.PHONY : head.i
+.PHONY : src/cmds.i
 
 # target to preprocess a source file
-head.c.i:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/head.c.i
-.PHONY : head.c.i
+src/cmds.c.i:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/cmds.c.i
+.PHONY : src/cmds.c.i
 
-head.s: head.c.s
+src/cmds.s: src/cmds.c.s
 
-.PHONY : head.s
+.PHONY : src/cmds.s
 
 # target to generate assembly for a file
-head.c.s:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/head.c.s
-.PHONY : head.c.s
+src/cmds.c.s:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/cmds.c.s
+.PHONY : src/cmds.c.s
 
-label.o: label.c.o
+src/head.o: src/head.c.o
 
-.PHONY : label.o
+.PHONY : src/head.o
 
 # target to build an object file
-label.c.o:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/label.c.o
-.PHONY : label.c.o
+src/head.c.o:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/head.c.o
+.PHONY : src/head.c.o
 
-label.i: label.c.i
+src/head.i: src/head.c.i
 
-.PHONY : label.i
+.PHONY : src/head.i
 
 # target to preprocess a source file
-label.c.i:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/label.c.i
-.PHONY : label.c.i
+src/head.c.i:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/head.c.i
+.PHONY : src/head.c.i
 
-label.s: label.c.s
+src/head.s: src/head.c.s
 
-.PHONY : label.s
+.PHONY : src/head.s
 
 # target to generate assembly for a file
-label.c.s:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/label.c.s
-.PHONY : label.c.s
+src/head.c.s:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/head.c.s
+.PHONY : src/head.c.s
 
-main.o: main.c.o
+src/label.o: src/label.c.o
 
-.PHONY : main.o
+.PHONY : src/label.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/main.c.o
-.PHONY : main.c.o
+src/label.c.o:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/label.c.o
+.PHONY : src/label.c.o
 
-main.i: main.c.i
+src/label.i: src/label.c.i
 
-.PHONY : main.i
+.PHONY : src/label.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/main.c.i
-.PHONY : main.c.i
+src/label.c.i:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/label.c.i
+.PHONY : src/label.c.i
 
-main.s: main.c.s
+src/label.s: src/label.c.s
 
-.PHONY : main.s
+.PHONY : src/label.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/main.c.s
-.PHONY : main.c.s
+src/label.c.s:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/label.c.s
+.PHONY : src/label.c.s
 
-output.o: output.c.o
+src/main.o: src/main.c.o
 
-.PHONY : output.o
+.PHONY : src/main.o
 
 # target to build an object file
-output.c.o:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/output.c.o
-.PHONY : output.c.o
+src/main.c.o:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/main.c.o
+.PHONY : src/main.c.o
 
-output.i: output.c.i
+src/main.i: src/main.c.i
 
-.PHONY : output.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-output.c.i:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/output.c.i
-.PHONY : output.c.i
+src/main.c.i:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/main.c.i
+.PHONY : src/main.c.i
 
-output.s: output.c.s
+src/main.s: src/main.c.s
 
-.PHONY : output.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-output.c.s:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/output.c.s
-.PHONY : output.c.s
+src/main.c.s:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/main.c.s
+.PHONY : src/main.c.s
+
+src/output.o: src/output.c.o
+
+.PHONY : src/output.o
+
+# target to build an object file
+src/output.c.o:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/output.c.o
+.PHONY : src/output.c.o
+
+src/output.i: src/output.c.i
+
+.PHONY : src/output.i
+
+# target to preprocess a source file
+src/output.c.i:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/output.c.i
+.PHONY : src/output.c.i
+
+src/output.s: src/output.c.s
+
+.PHONY : src/output.s
+
+# target to generate assembly for a file
+src/output.c.s:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/src/output.c.s
+.PHONY : src/output.c.s
 
 # Help Target
 help:
@@ -267,21 +267,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... untitled1"
-	@echo "... cmds.o"
-	@echo "... cmds.i"
-	@echo "... cmds.s"
-	@echo "... head.o"
-	@echo "... head.i"
-	@echo "... head.s"
-	@echo "... label.o"
-	@echo "... label.i"
-	@echo "... label.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... output.o"
-	@echo "... output.i"
-	@echo "... output.s"
+	@echo "... src/cmds.o"
+	@echo "... src/cmds.i"
+	@echo "... src/cmds.s"
+	@echo "... src/head.o"
+	@echo "... src/head.i"
+	@echo "... src/head.s"
+	@echo "... src/label.o"
+	@echo "... src/label.i"
+	@echo "... src/label.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/output.o"
+	@echo "... src/output.i"
+	@echo "... src/output.s"
 .PHONY : help
 
 

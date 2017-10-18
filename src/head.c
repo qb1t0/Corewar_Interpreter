@@ -1,4 +1,4 @@
-#include "asm.h"
+#include "../includes/asm.h"
 
 int cw_check_end(int i)
 {

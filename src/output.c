@@ -1,4 +1,4 @@
-#include "asm.h"
+#include "../includes/asm.h"
 
 /*
 ** Final command write here:
@@ -12,7 +12,7 @@ void cw_write_code(t_cmnd *tmp, int fd)
     while (tmp)
     {
         i = 1;
-        char k = tmp->cipher << 4;
+        char k = tmp->cipher << ((4 - g_tab[tmp->cmd].arg) * 2);
         write(fd, &g_tab[tmp->cmd].num, 1);
         g_tab[tmp->cmd].id1 == 1 ? write(fd, &(k), 1) : 0;
         while (i <= g_tab[tmp->cmd].arg)
